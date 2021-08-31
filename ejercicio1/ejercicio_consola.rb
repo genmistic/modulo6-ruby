@@ -10,7 +10,7 @@ puts "hola compuesto #{nombre_usuario}"
 puts "¿Qué edad tienes?"
 edad = gets.chomp
 puts "no representas... #{edad}"
-puts"... representas mucho mas!!!
+puts"... representas mucho mas!!!"
 puts "¿Donde vives?"
 casa = gets.chomp
 puts "Llueve alguna vez  #{casa} 🤣🤣😂"
