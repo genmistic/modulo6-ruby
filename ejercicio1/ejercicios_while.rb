@@ -120,25 +120,146 @@
 # 8
 
 # => Felicidades, el número era 8
-system("clear")
-numazar = rand(1..20)
-apuesta = 0
-texto = ""
-puts "Adivine el numero que estoy pensando"
-num_usuario = 0
-cont = 0
+# system("clear")
+# numazar = rand(1..20)
+# apuesta = 0
+# texto = ""
+# puts "Adivine el numero que estoy pensando"
+# num_usuario = 0
+# cont = 0
 
-while num_usuario != numazar
-    num_usuario = gets.chomp.to_i
+# while num_usuario != numazar
+#     num_usuario = gets.chomp.to_i
 
-    if num_usuario < numazar
-        puts "Muy abajo"
-        cont += 1
-    elsif num_usuario > numazar
-        puts "Muy arriba"
-        cont += 1
-    end
-end
-system("clear")
-puts "adivinaste.... #{numazar}, era el numero que pensé"
-puts "adivinaste en....  #{cont} intentos"
+#     if num_usuario < numazar
+#         puts "Muy abajo"
+#         cont += 1
+#     elsif num_usuario > numazar
+#         puts "Muy arriba"
+#         cont += 1
+#     end
+# end
+# system("clear")
+# puts "adivinaste.... #{numazar}, era el numero que pensé"
+# puts "adivinaste en....  #{cont} intentos"
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#1. 
+# Repito 🦜
+# Utilizando la estructura en bucle while permitir que el 
+# usuario ingrese palabras, estas deberán ser devueltas al 
+# usuario con un texto "dijiste: ...", hasta que el usuario 
+# escriba salir
+
+# Ejemplo
+# hola 
+# => dijiste: hola 🦜 
+# ¿me estas imitando 😠? 
+# => dijiste: ¿me estas imitando 😠? 🦜
+
+# texto = ""
+# puts "dime algo..."
+
+# while texto != "salir"
+#     texto = gets.chomp # chomp quita el enter / nueva línea
+#     puts "dijiste: #{texto} 🦜"
+# end
+
+#2.
+# Ventas totales 💰
+
+# El usuario quiere conocer la cantidad de ventas que a realizado 
+# en el día, por lo que el programa deberá recibir toda la cantidad 
+# de ventas en forma de números, sumarlas y al final para salir el 
+# usuario deberá escribir -1. El programa también deberá controlar 
+# que no ingrese texto mezclado con los números. 
+# (se puede utilizar "texto".to_i para apoyarse en alguna validación)
+
+# Ejemplo
+
+# => Ingrese sus ventas del día 
+# 5000 
+# 6000 
+# 1000 
+# 650ss 
+# => 650ss no es un número 🧨 
+# -1 
+# => Las ventas del día fueron 12000 💵
+
+# ventas = []
+# index = 0
+# suma = 0
+# monto = 0
+
+# while monto != -1
+#     puts "ingrese ventas"
+#     monto = gets.chomp
+
+#     # validaciones desde la a hasta la z
+#     if monto.include? "a" or monto.include? "b" or monto.include? "c" or monto.include? "d" or monto.include? "e" or monto.include? "f" or monto.include? "g" or monto.include? "h" or monto.include? "i" or monto.include? "j" or monto.include? "k" or monto.include? "l" or monto.include? "m" or monto.include? "n" or monto.include? "ñ" or monto.include? "o" or monto.include? "p" or monto.include? "q" or monto.include? "r" or monto.include? "s" or monto.include? "t" or monto.include? "u" or monto.include? "v" or monto.include? "w" or monto.include? "x" or monto.include? "y" or monto.include? "z"
+#         puts "#{monto} no es un número 🧨"
+#     else
+#         monto = monto.to_i
+#         if monto != -1
+#             ventas[index] = monto
+#             suma += ventas[index]
+#             index += 1
+#         end
+#     end
+# end
+
+# puts "las ventas del día son #{ventas}"
+# puts "la venta total del día #{suma}"
+
+# 3. 
+
+# vida = rand(100..500)
+
+# vida_tmp = vida
+
+# ataques_pares = 0
+# ataques_impares = 0
+
+# # si la vida es impar, restar 1
+# # si la vida es par dividir entre 2
+
+# while vida > 0
+#     if vida % 2 == 0 # par
+#         vida = vida / 2
+#         ataques_pares += 1
+#         # vida /= 2
+#     else
+#         vida -= 1
+#         ataques_impares += 1
+#     end
+# end
+# puts " Ataques totales para matar al monstruo 
+#     #{vida_tmp} HP | pares: #{ataques_pares}, 
+#     impares #{ataques_impares} ⚔ "
+
+# 4.
+# system("clear")
+
+# numero_secreto = rand(1..20)
+# numero_usuario = 0
+# intentos = 0
+
+# puts "Adivina el número"
+
+# while numero_usuario != numero_secreto
+    
+#     numero_usuario = gets.chomp.to_i
+
+#     if numero_usuario < numero_secreto
+#         puts "Muuuy abajo"
+#         intentos += 1
+#     elsif numero_usuario > numero_secreto
+#         puts "Muuuuy arriba"
+#         intentos += 1
+#     end
+
+# end
+
+# puts "Adivinaste, el número era #{numero_secreto}"
+# puts "tuviste #{intentos} intentos"
