@@ -18,9 +18,10 @@
 system ("clear")
 cont = 0
 puts "ingrese numero"
-numero = gets.chomp.to_i
-for i in 0..numero
-    if numero % 2 == 0
+num = gets.chomp.to_i
+
+for i in 0..num
+    if num % 2 == 0
         a=2*i
         puts i
       

@@ -1,3 +1,6 @@
+# tiempo inicio = Time.now   ---- tiempo inicio es un clase
+# tiempo_final = Time.now   ---- tiempo final
+
 # FOR EN RUBY
 
 # CASO 1
@@ -194,19 +197,19 @@
  
 #3 FACTORIAL
 
-factorial = 0
-acum = 1
-operacion =""
-puts "Ingrese numero n para factorial : "
-factorial = gets.chomp.to_i
-for i in 1..factorial
-    acum = i*acum
-    if i< factorial
-     operacion += "#{i} * "
-    else
-     operacion += "#{i} = "
-    break
-    end
-end
-puts " El factorila de : #{factorial}"
-puts "#{operacion} #{acum}"
+# factorial = 0
+# acum = 1
+# operacion =""
+# puts "Ingrese numero n para factorial : "
+# factorial = gets.chomp.to_i
+# for i in 1..factorial
+#     acum = i*acum
+#     if i< factorial
+#      operacion += "#{i} * "
+#     else
+#      operacion += "#{i} = "
+#     break
+#     end
+# end
+# puts " El factorila de : #{factorial}"
+# puts "#{operacion} #{acum}"
