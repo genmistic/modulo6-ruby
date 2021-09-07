@@ -138,3 +138,4 @@ for i in 1..5
     equipo_visitante = equipos.pop   # extrae el último elemento
     puts "#{equipo_local[:nombre]} 🆚 #{equipo_visitante[:nombre]}"
 end
+
