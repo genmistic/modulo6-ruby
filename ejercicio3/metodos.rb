@@ -147,7 +147,6 @@
 #     end
 # end
 
-
 #Ejercicio Encapsulando I
 # def posiciones_10()
 #     posiciones=[]
@@ -199,7 +198,32 @@
 
 # print posiciones_xyz(numero1,numero2,numero3)
 
-
+# Todo en uno solo 🦠
+# Utilizando métodos, crear un menú para que el usuario pueda elegir qué operaciones desea realizar. Las operaciones son las siguientes:
+# Bancos 🏧
+# Se quiere retirar dinero de su cuenta bancaria, el cajero solo acepta múltiplos de 5 y valida si tiene monto suficiente. Por cada transacción
+#  exitosa, el banco se cobra 0,50$.
+# Ejemplo
+# 30 120
+# => 89.5
+# 42 120
+# => 120
+# 300 120
+# => 120
+# Suma interior ⚗
+# Sumar todos los dígitos ingresados por el usuario
+# Ejemplo
+# 21
+# => 3
+# 0
+# => 0
+# -1
+# => -1
+# ¿ Capicúa ? 🎭
+# Dado un número n ingresado por consola, mostrarlo al revés y si es un número capicúa imprimir el mensaje " Es capicúa "
+# Ejemplo
+# 52149
+# => 94125
 
 
 def menu
@@ -234,24 +258,55 @@ def banco
 system("clear")
 puts "OPCION BANCO"
 puts "Ingrese monto a retirar"
+saldo = 120
 monto=gets.to_f
 puts "Ingrese Saldo"
-saldo=gest.to_f
+saldo=gets.to_f
 if monto % 5 ==0 and (monto+0.5)<=saldo
     saldo -=  (monto+0.5)
     puts "su nuevo saldo es #{saldo}"
     gets
 else
-    puts "Monto no es multiplo de 5 o tiene saldo insuficiente #{saldo}"
+    puts "NO tiene saldo insuficiente #{saldo}"
     gets
 end
 end
 
 def sumainterior
-
+system("clear")
+suma=0
+puts "Ingrese número"
+digitos=gets.to_i
+if digitos<0
+    digitos*=-1
+    digitos.digits.each do |n|
+    suma += n
+    end
+    suma*=-1
+else
+    digitos.digits.each do |n|
+    suma += n
+    end
+end
+puts suma
+puts "Presione Enter para continuar"
+gets
 end
 
 def capicua
+    
+    print "Ingrese numero que desea evaluar: "
+    capic = gets.to_s
+    convertido = capic.reverse
+
+    if convertido.to_i.eql? capic.to_i
+      puts "#{convertido} es capicua"
+      gets
+    else
+        puts "No es capicua el numero :#{capic}"
+        gets
+    end
+
 end
 
 menu

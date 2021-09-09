@@ -16,7 +16,7 @@
 
 
 #.at or .fetch
-h = { 11, 22, 33, 44 }
+h = { 142, 22, 33, 44 }
 
 puts a(2).fetch
 h = []
@@ -26,3 +26,5 @@ h.fetch(:foo) # no default value, raises error
 
 h.fetch(:bar, 10) # default value, returns default value
 # => 10
+
+
