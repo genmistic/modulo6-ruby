@@ -1,5 +1,5 @@
 module ModuloImpresiones
- system "clear"   
+    
     def saludar(nombre)
         puts "hola #{nombre} desde el módulo impresiones"
     end
@@ -39,5 +39,24 @@ module ModuloImpresiones
         }
     end
 
+    def imprimir_usuarios_con_dc(arreglo_usuarios_con_dc)
+        espacio = 2
+        conteo_letras = arreglo_usuarios_con_dc.map{|usuario| usuario[:title].length}
+        align_title = conteo_letras.max+espacio
+        conteo_letras_name = arreglo_usuarios_con_dc.map{ |usuario| usuario[:name].length}
+        align_name = conteo_letras_name.max+espacio
+        arreglo_usuarios_con_dc.each { |usuario|
+        puts "#{usuario[:title].ljust(align_title) }|#{usuario[:name].ljust(align_name)} |#{usuario[:hero].ljust(align_title)}"
+        }
+    end
+    def imprimir_usuarios_con_nacion(arreglo_usuarios_con_nacion)
+        espacio = 2
+        conteo_letras = arreglo_usuarios_con_nacion.map{|usuario| usuario[:nationality].length}
+        align_title = conteo_letras.max+espacio
+        conteo_letras_language = arreglo_usuarios_con_nacion.map{ |usuario| usuario[:language].length}
+        align_name = conteo_letras_language.max+espacio
+        arreglo_usuarios_con_nacion.each { |usuario|
+        puts "#{usuario[:nationality].ljust(align_title) }|#{usuario[:language].ljust(align_name)} |#{usuario[:capital].ljust(align_title)}"
+        }
+    end
 end
-
