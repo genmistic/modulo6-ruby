@@ -29,3 +29,4 @@ dueno1.nombremascota = mascota1
 dueno1.mostrar_datos_de_mascota
 
 mascota1.estoy_vacunado?
+puts dueno1.nombre

@@ -66,20 +66,19 @@
 # # Escriba un programa (un conjunto de instrucciones) que tome cualquier arreglo 
 # # y muestre el valor máximo del arreglo. Tu programa debe funcionar también con arreglos 
 # # que tengan todos los números negativos (ejemplo [-3, -5, -7]), o incluso una combinación 
-# # con números positivos, negativos y cero.🚩🚩🚩
+# # con números positivos, negativos y cero.🚩
 
 
-# arr = [-3, 5, -7]
-# arr2 = [-3, -5, -7]
-# arr3 = arr2+arr
-# print arr3, " .....  arreglo inicial"
-# nuevo = []
-# for i in 0..arr3.length
-#     if arr3[i].to_i > arr3[i+1].to_i
-#     nuevo= arr3[i]
-#     end 
-# end
-# print nuevo
+arr = [-3, 5, -7, 0]
+arr2 = [-3, -5, -7]
+arr3 = arr2+arr
+print " .....  arreglo inicial es: #{arr3}" "\n"
+nuevo = []
+
+
+
+print "...........El valor maximo es : #{arr3.max.to_s}" "\n"
+
 
 
 
@@ -91,11 +90,11 @@
 # Puedes utilizar la función length para esta actividad.🚩
 
 
-arr = [2, 10, 3]
+# arr = [2, 10, 3]
 
-arr.each {
-    |n| n=n / arr.lenght
-}
+# arr.each {
+#     |n| n=n / arr.lenght
+# }
 
 
 # # Arreglo con números impares
