@@ -69,15 +69,11 @@
 # # con números positivos, negativos y cero.🚩
 
 
-arr = [-3, 5, -7, 0]
-arr2 = [-3, -5, -7]
-arr3 = arr2+arr
-print " .....  arreglo inicial es: #{arr3}" "\n"
-nuevo = []
-
-
-
-print "...........El valor maximo es : #{arr3.max.to_s}" "\n"
+# arr = [-3, 5, -7, 0]
+# arr2 = [-3, -5, -7]
+# arr3 = arr2+arr
+# print " .....  arreglo inicial es: #{arr3}" "\n"
+# print "...........El valor maximo es : #{arr3.max.to_s}" "\n"
 
 
 
