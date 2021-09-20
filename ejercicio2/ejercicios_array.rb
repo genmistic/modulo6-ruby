@@ -144,13 +144,13 @@ letra =""
 lista =[]
 
 while nombre != "salir"
-puts "Escriba el Nombre de una Persona, escriba <<Mostrar>> para ver la lista y <<Salir>> para terminar"
-nombre=gets.chomp
-letra = nombre.split("")
-if nombre == "mostrar"
-lista.each do |n|
-print " #{n} - "
-end
+    puts "Escriba el Nombre de una Persona, escriba <<Mostrar>> para ver la lista y <<Salir>> para terminar"
+    nombre=gets.chomp
+    letra = nombre.split("")
+    if nombre == "mostrar"
+        lista.each do |n|
+        print " #{n} - "
+    end
 puts ""
 puts ""
 elsif letra[0] == "a" or letra[0] == "e" or letra[0] == "i" or letra[0] == "o" or letra[0] == "u"
