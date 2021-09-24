@@ -207,7 +207,7 @@ resultado = x.map{|n|
     if n < 0 
         n = "Dojo".to_s
         print n
-    else n >= 0
+    else n = 0
         n = n * 1
     end 
 }
