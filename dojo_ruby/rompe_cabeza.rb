@@ -22,7 +22,9 @@
 # # Genere un arreglo con 10 números aleatorios entre 55 - 100.  
 # #  Genere un arreglo con 10 números aleatorios entre 55 - 100 y haz que esté en orden (el número más pequeño
 # #     en la primera posición). Muestre todos los números del arreglo. Por último, muestre el valor mínimo y 
-# #     el valor máximo del arreglo.  Genere una cadena aleatoria de 5 caracteres. (Pista (65+rand(26)).chr 
+# #     el valor máximo del arreglo.  
+
+# # Genere una cadena aleatoria de 5 caracteres. (Pista (65+rand(26)).chr 
 # #     devuelve un caracter aleatorio).  Genere un arreglo con 10 cadenas aleatorias de 5 caracteres cada una.
 
     x = [3,5,1,2,7,9,8,13,25,32]
@@ -56,14 +58,23 @@
         end
     end
     puts "------------------------------------------------"
-    num3=[]
+    
     for i in 1..10 
-        num3=rand(55..100)
-        num3.select.min
-        valor2 = num3.select.max
-        # num3.find_all {|n| n}
-        # print "✅ Arreglo #{num3.find} "
+        num << rand(55..100)
     end
-        
-        print "Valor minimo = #{valor} \n"
-        print "Valor2 Maximo = #{valor2} \n"
+    print "✅ Arreglo      :#{num}\n"
+    print "✅ Valor minimo :#{num.select.min}\n"
+    print "✅ Valor maximo :#{num.select.min}\n"
+    
+    puts "------------------------------------------------"
+    
+    num2 = [].to_s
+    for i in 1..5
+        num2 << rand(i).chr
+    end
+    print "✅ Arreglo         : #{num2}\n"
+    print "✅ Seleccionado el : #{num2[2]}\n"
+    
+    
+    # print "✅ Valor minimo :#{num.select.min}\n"
+    # print "✅ Valor maximo :#{num.select.min}\n"

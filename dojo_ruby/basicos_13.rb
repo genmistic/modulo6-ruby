@@ -172,18 +172,18 @@
 # # Dado un arreglo x, digamos [1, 5, 10, -2], cree un algoritmo que devuelva un hash con el valor máximo, el valor mínimo y el promedio de los valores en el arreglo.
 # #  🟢🟢🟢
 
-# x = [1, 5, 10, -2]
-# suma = 0
-# prom = 0
-# x.each {|n|
-#     suma = n + suma
-#     prom = suma / x.length
-# }
-# print "El arreglo es : #{x} \n", "La suma de los numeros del hash es : #{suma} \n", "El Promedio de los numeros del hash es : #{prom} \n" 
-# #puts prom
-# valor = x.select.min
-# valor2 = x.select.max
-# print "Valor minimo = #{valor} \n", "Valor2 Maximo = #{valor2} \n"
+x = [1, 5, 10, -2]
+suma = 0
+prom = 0
+x.each {|n|
+    suma = n + suma
+    prom = suma / x.length
+}
+print "El arreglo es : #{x} \n", "La suma de los numeros del hash es : #{suma} \n", "El Promedio de los numeros del hash es : #{prom} \n" 
+#puts prom
+valor = x.select.min
+valor2 = x.select.max
+print "Valor minimo = #{valor} \n", "Valor2 Maximo = #{valor2} \n"
 
 
 # # Cambiar los valores en el arreglo
@@ -200,17 +200,17 @@
 # # Números a cadenas
 # # Escriba un programa que tome un arreglo de números y reemplace cualquier número negativo con la palabra "Dojo". 
 # # Por ejemplo, dado el arreglo x = [-1, -3, 2], después que el programa haya terminado, ese arreglo debe ser ['Dojo', 'Dojo', 2].
-⛔⛔⛔
-x = [-1, -3, 2]
+# ⛔⛔⛔
+# x = [-1, -3, 2]
 
-resultado = x.map{|n| 
-    if n < 0 
-        n = "Dojo".to_s
-        print n
-    else n = 0
-        n = n * 1
-    end 
-}
-puts
-print "Para el arreglo #{x}. \n  Resutando este arreglo: #{resultado.to_s} \n"
-puts
+# resultado = x.map{|n| 
+#     if n < 0 
+#         n = "Dojo".to_s
+#         print n
+#     else n = 0
+#         n = n * 1
+#     end 
+# }
+# puts
+# print "Para el arreglo #{x}. \n  Resutando este arreglo: #{resultado.to_s} \n"
+# puts
