@@ -9,6 +9,8 @@
 # # Mostrar 1-255
 # # Escriba un programa que muestre todos los números del 1 al 255.
 # # 🟢🟢🟢
+#💥
+#digits = Array(1..255)
 
 # for i in (1..255)
 # puts i
@@ -17,6 +19,7 @@
 # # Mostrar números impares entre 1 y 255
 # # Escriba un programa que muestre todos los números impares del 1 al 255.
 # # 🟢🟢🟢
+#
 
 # for i in (1..255)
 #     if i % 2 == 1
