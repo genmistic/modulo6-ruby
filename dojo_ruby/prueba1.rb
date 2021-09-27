@@ -22,3 +22,4 @@ class CodingDojo
   seattle = CodingDojo.new(1, "Seattle", "123 Seattle Avenue")
   san_jose = CodingDojo.new(2, "San Jose", "456 San Jose Boulevard")
   burbank = CodingDojo.new(3, "Burbank", "789 Burbank Street")
+  seattle.branch_name
