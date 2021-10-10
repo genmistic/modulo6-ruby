@@ -49,7 +49,7 @@ NO utilice un arreglo para este ejercicio.
 =end
 
 sum1 = 0
-for i in (0..255)
+for i i n (0..255)
     sum1 = sum1 + i
     puts "El numero es : #{i} y la suma con el numero anterior es :#{sum1}"
 end
