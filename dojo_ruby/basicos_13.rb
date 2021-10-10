@@ -6,82 +6,81 @@
 
 # # Bonificación: Intente utilizar la menor cantidad de líneas posible para cada pregunta.🚦
 
-# # Mostrar 1-255
-# # Escriba un programa que muestre todos los números del 1 al 255.
-# # 🟢🟢🟢
-#💥
-#digits = Array(1..255)
+=begin
+Mostrar 1-255
+Escriba un programa que muestre todos los números del 1 al 255.
+🟢🟢🟢
+=end
 
-# for i in (1..255)
-# puts i
-# end
+(1..255).each {|n| p n}
 
-# # Mostrar números impares entre 1 y 255
-# # Escriba un programa que muestre todos los números impares del 1 al 255.
-# # 🟢🟢🟢
-#
-
-# for i in (1..255)
-#     if i % 2 == 1
-#         puts i
-#     end
-# end
+=begin
+Mostrar números impares entre 1 y 255
+Escriba un programa que muestre todos los números impares del 1 al 255.
+🟢🟢🟢
+=end
+puts " Números Impares del 1 al 255"
+(1..255).each {|n| n % 2 == 1 
+          p n }
 
 
-
-# # Muestre la suma
-# # Escriba un programa que muestre los números del 0 al 255, pero esta vez,
-# # muestre también la suma de los números que se han mostrado hasta el momento.
-# # Por ejemplo, tu programa debe mostrar algo como esto:
-
-# # Nuevo numero: 0 Suma: 0
-# # Nuevo numero: 1 Suma: 1
-# # Nuevo numero: 2 Suma: 3
-# # Nuevo numero: 3 Suma: 6
-# # ...
-# # Nuevo numero: 255 Suma: __
-# # NO utilice un arreglo para este ejercicio.
-# # 🟢🟢🟢
-
-# for i in (0..255)
-#     if i % 2 == 1
-
-#         puts "El numero es : #{i} y la suma con el numero anterior es :#{i+=i}"
-
-#     end
-# end
+puts " con for....."
+for i in (1..255)
+    if i % 2 == 1
+        puts i
+    end
+end
 
 
+=begin
+Muestre la suma
+Escriba un programa que muestre los números del 0 al 255, pero esta vez,
+muestre también la suma de los números que se han mostrado hasta el momento.
+Por ejemplo, tu programa debe mostrar algo como esto:
 
-# # Recorriendo un arreglo
-# # Dado un arreglo X, digamos [1, 3, 5, 7, 9, 13], escriba un programa que
-# # recorra cada elemento del arreglo y muestre su valor. Ser capaz de recorrer cada
-# # elemento de un arreglo es sumamente importante.
-# # 🟢🟢🟢
+Nuevo numero: 0 Suma: 0
+Nuevo numero: 1 Suma: 1
+Nuevo numero: 2 Suma: 3
+Nuevo numero: 3 Suma: 6
+...
+Nuevo numero: 255 Suma: __
+NO utilice un arreglo para este ejercicio.
+🟢🟢🟢
+=end
 
-
-# x = [1, 3, 5, 7, 9, 13]
-
-# x.each do |numero|
-#     print numero, " "
-# end
-
-
-
-
-# # Encontrar el máximo
-# # Escriba un programa (un conjunto de instrucciones) que tome cualquier arreglo
-# # y muestre el valor máximo del arreglo. Tu programa debe funcionar también con arreglos
-# # que tengan todos los números negativos (ejemplo [-3, -5, -7]), o incluso una combinación
-# # con números positivos, negativos y cero.
-# # 🟢🟢🟢
+sum1 = 0
+for i in (0..255)
+    sum1 = sum1 + i
+    puts "El numero es : #{i} y la suma con el numero anterior es :#{sum1}"
+end
 
 
-# arr = [-3, 5, -7, 0]
-# arr2 = [-3, -5, -7]
-# arr3 = arr2+arr
-# print " .....  arreglo inicial es: #{arr3}" "\n"
-# print "...........El valor maximo es : #{arr3.max.to_s}" "\n"
+=begin
+Recorriendo un arreglo
+Dado un arreglo X, digamos [1, 3, 5, 7, 9, 13], escriba un programa que
+recorra cada elemento del arreglo y muestre su valor. Ser capaz de recorrer cada
+elemento de un arreglo es sumamente importante.
+🟢🟢🟢
+=end
+
+x = [1, 3, 5, 7, 9, 13]
+
+x.each {|numero| puts "#{numero}"}
+
+=begin
+Encontrar el máximo
+Escriba un programa (un conjunto de instrucciones) que tome cualquier arreglo
+y muestre el valor máximo del arreglo. Tu programa debe funcionar también con arreglos
+que tengan todos los números negativos (ejemplo [-3, -5, -7]), o incluso una combinación
+con números positivos, negativos y cero.
+🟢🟢🟢
+=end
+
+arr = [-3, 5, -7, 0, 4, 10, 121, -100]
+arr2 = [-3, -5, -7]
+arr3 = arr2+arr
+print " .....  arreglo inicial es: #{arr3}" "\n"
+print "...........El valor maximo es : #{arr3.max.to_s}" "\n"
 
 
 
@@ -171,22 +170,24 @@
 # print "Para el arreglo #{x} , los numeros negativos son convertidos en un 0. Resutando este arreglo: #{resultado}"
 # puts
 
-# # Max, Min, y Promedio
-# # Dado un arreglo x, digamos [1, 5, 10, -2], cree un algoritmo que devuelva un hash con el valor máximo, el valor mínimo y el promedio de los valores en el arreglo.
-# #  🟢🟢🟢
+=begin
+Max, Min, y Promedio
+Dado un arreglo x, digamos [1, 5, 10, -2], cree un algoritmo que devuelva un hash con el valor máximo, el valor mínimo y el promedio de los valores en el arreglo.
+ 🟢🟢🟢
+=end
 
-x = [1, 5, 10, -2]
-suma = 0
-prom = 0
-x.each {|n|
-    suma = n + suma
-    prom = suma / x.length
-}
-print "El arreglo es : #{x} \n", "La suma de los numeros del hash es : #{suma} \n", "El Promedio de los numeros del hash es : #{prom} \n" 
-#puts prom
-valor = x.select.min
-valor2 = x.select.max
-print "Valor minimo = #{valor} \n", "Valor2 Maximo = #{valor2} \n"
+# x = [1, 5, 10, -2]
+# suma = 0
+# prom = 0
+# x.each {|n|
+#     suma = n + suma
+#     prom = suma / x.length
+# }
+# print "El arreglo es : #{x} \n", "La suma de los numeros del hash es : #{suma} \n", "El Promedio de los numeros del hash es : #{prom} \n" 
+# #puts prom
+# valor = x.select.min
+# valor2 = x.select.max
+# print "Valor minimo = #{valor} \n", "Valor2 Maximo = #{valor2} \n"
 
 
 # # Cambiar los valores en el arreglo
@@ -199,21 +200,36 @@ print "Valor minimo = #{valor} \n", "Valor2 Maximo = #{valor2} \n"
 # x.push(0)
 # print x
 
-
-# # Números a cadenas
-# # Escriba un programa que tome un arreglo de números y reemplace cualquier número negativo con la palabra "Dojo". 
-# # Por ejemplo, dado el arreglo x = [-1, -3, 2], después que el programa haya terminado, ese arreglo debe ser ['Dojo', 'Dojo', 2].
-# ⛔⛔⛔
+=begin
+Números a cadenas
+Escriba un programa que tome un arreglo de números y reemplace cualquier número negativo con la palabra "Dojo". 
+Por ejemplo, dado el arreglo x = [-1, -3, 2], después que el programa haya terminado, ese arreglo debe ser ['Dojo', 'Dojo', 2].
+⛔⛔⛔
 # x = [-1, -3, 2]
-
-# resultado = x.map{|n| 
+=end
+# resultado = [-1, -3, 2]
+# m = "Dojo"
+# p resultado.map!.to_s{|n| 
 #     if n < 0 
-#         n = "Dojo".to_s
-#         print n
+#         resultado[n] = m.to_s #return
 #     else n = 0
 #         n = n * 1
 #     end 
-# }
+   
+#}
 # puts
-# print "Para el arreglo #{x}. \n  Resutando este arreglo: #{resultado.to_s} \n"
-# puts
+# print "Para el arreglo #{resultado}. \n  Resutando este arreglo: #{resultado.to_s} \n"
+#puts
+
+
+# def reemplazo
+    
+#     reemplazo.map! { |n| n < 0
+#     reemplazo[n]="dojo"
+#     p n
+#     } 
+#     puts "------------"
+# p reemplazo
+# end
+# p reemplazo
+# reemplazo

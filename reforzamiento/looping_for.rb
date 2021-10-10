@@ -6,7 +6,7 @@
 def suma_for(min, max)
 sum = 0
 
-    p -1 if min > max
+    p (-1) if min > max
 
     for i in (min..max)
         sum = i + sum
