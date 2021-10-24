@@ -1,14 +1,14 @@
-require 'securerandom'
+require 'securerandom'   # llama a gemaruby
 
-class Cuenta
+class Cuenta              #Cuenta on C mayuscula  crear objetos encapsulados
     
-    attr_accessor :usuario
+    attr_accessor :usuario               # ATRIBUTO accesor recupera datos por fuera de la variable ///   attr_reader 
     attr_accessor :tipo_movimiento
     attr_accessor :monto
     attr_accessor :numero_cuenta
 
-    def initialize(usuario, tipo_movimiento)
-        @usuario            = usuario
+    def initialize(usuario, tipo_movimiento)   # metodo llamado constructor, se ejecuta con .new
+        @usuario            = usuario          # @iusuario hacer referncia a la variable attr_accessor :usuario
         @tipo_movimiento = []
         @tipo_movimiento.push(tipo_movimiento)
         @monto              = rand(50000..100000)
@@ -16,7 +16,7 @@ class Cuenta
     end
 
     def consultar_saldo
-        puts("Tu saldo es : #{@monto}")
+        puts("#{@usuario} Tu saldo es : #{@monto}")
         puts("cuenta : #{@numero_cuenta}")
     end
 
