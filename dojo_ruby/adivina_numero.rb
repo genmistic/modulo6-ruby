@@ -27,6 +27,6 @@ while num_usuario != numazar
          end
 end
 system("clear")
-puts "¡Lo conseguiste!.... #{numazar} es el númer"
-puts "¡Lo conseguiste! en....  #{cont} intentos"
+puts "¡Lo conseguiste!.... %d es el númer" %numazar 
+puts "¡Lo conseguiste! en....  %d intentos" %cont
     
