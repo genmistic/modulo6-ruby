@@ -4,7 +4,7 @@ class Dueño
     # atributos
     # nombre - mascota
     attr_accessor :nombre
-    attr_accessor :animalito # nil
+    attr_accessor :animalito # nil 
 
     def initialize(nombre = "", animalito = nil)
         @nombre     = nombre    # String
